@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mavi Melegrito | Computer Engineering Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of Mavi Melegrito, a 2nd year Computer Engineering student at Aura College passionate about C++, Python, PHP, OOP, and software development.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for UI & JetBrains Mono for Code Elements -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow Gradients -->
+  <div class="ambient-glow ambient-glow-top"></div>
+  <div class="ambient-glow ambient-glow-middle"></div>
+  <div class="ambient-glow ambient-glow-bottom"></div>
+
+  <!-- ========================================================
+       STICKY NAVIGATION BAR
+       ======================================================== -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Mavi Melegrito Homepage">
+        <span class="logo-text">Mavi<span class="dot">.</span></span>
+        <span class="logo-tag">CpE</span>
+      </a>
+
+      <!-- Desktop Navigation Menu Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <!-- Mobile Connect Button in Menu -->
+        <li class="nav-item mobile-only-item">
+          <a href="#contact" class="btn btn-primary btn-full">Let's Connect</a>
+        </li>
+      </ul>
+
+      <!-- Navbar Action Button (Desktop) -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-connect-btn">Let's Connect</a>
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <main>
+    <!-- ========================================================
+         HERO SECTION
+         ======================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Hero Left Column: Main Headline and Actions -->
+        <div class="hero-content reveal">
+          <!-- Availability / Status Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">2nd Year Computer Engineering Student</span>
+          </div>
+
+          <!-- Main Hero Heading -->
+          <h1 class="hero-title">
+            Building My <span class="text-gradient">Future</span> Through Code
+          </h1>
+
+          <!-- Typewriter Role Sub-line -->
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">&gt; </span>
+            <span class="typing-text" id="typewriterText">Computer Engineering Student</span>
+            <span class="cursor">|</span>
+          </div>
+
+          <!-- Supporting Text -->
+          <p class="hero-description">
+            I'm <strong class="highlight-text">Mavi Melegrito</strong>, a 2nd year Computer Engineering student passionate about programming, technology, and software development. Continuously honing core engineering logic, clean architecture, and practical coding skills.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Social Proof / Academic Badge Pill -->
+          <div class="hero-affiliation">
+            <div class="affiliation-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="affiliation-info">
+              <span class="affiliation-school">Aura College</span>
+              <span class="affiliation-course">BS in Computer Engineering • Batch 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Futuristic CSS Composition -->
+        <div class="hero-visual reveal reveal-right">
+          <div class="visual-stack">
+            
+            <!-- Terminal Code Window Card -->
+            <div class="tech-card terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <span class="terminal-title">mavi@auracollege:~/developer.cpp</span>
+                <span class="terminal-tag">C++ / OOP</span>
+              </div>
+              <div class="terminal-body">
+                <pre class="code-snippet"><code><span class="code-keyword">#include</span> <span class="code-string">&lt;iostream&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;string&gt;</span>
+
+<span class="code-keyword">class</span> <span class="code-class">StudentEngineer</span> {
+<span class="code-keyword">public:</span>
+    std::string name = <span class="code-string">"Mavi Melegrito"</span>;
+    <span class="code-keyword">int</span> year = <span class="code-number">2</span>;
+    std::string focus = <span class="code-string">"Software & Logic"</span>;
+
+    <span class="code-keyword">void</span> <span class="code-func">buildFuture</span>() {
+        std::cout &lt;&lt; <span class="code-string">"Ready to innovate!"</span>;
+    }
+};</code></pre>
+              </div>
+            </div>
+
+            <!-- 3D Glowing Tech Frame Card (Inspired by reference geometric element) -->
+            <div class="tech-card metric-card-glow">
+              <div class="metric-wireframe">
+                <div class="cube-wireframe">
+                  <div class="cube-facet front"></div>
+                  <div class="cube-facet back"></div>
+                  <div class="cube-facet left"></div>
+                  <div class="cube-facet right"></div>
+                  <div class="cube-facet top"></div>
+                  <div class="cube-facet bottom"></div>
+                </div>
+              </div>
+              <div class="metric-text-content">
+                <div class="metric-badge">Academic Focus</div>
+                <div class="metric-number">100%</div>
+                <div class="metric-label">Engineering Commitment</div>
+              </div>
+            </div>
+
+            <!-- Profile Badge Floating Card -->
+            <div class="tech-card profile-preview-card">
+              <div class="avatar-ring">
+                <div class="avatar-initials">MM</div>
+                <span class="avatar-active-dot"></span>
+              </div>
+              <div class="profile-preview-info">
+                <span class="profile-name">Mavi Melegrito</span>
+                <span class="profile-role">Computer Engineering</span>
+                <span class="profile-college">Aura College</span>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-cpp">
+              <span class="badge-icon">C++</span>
+              <span>OOP Core</span>
+            </div>
+            <div class="floating-badge badge-py">
+              <span class="badge-icon">PY</span>
+              <span>Python 3</span>
+            </div>
+            <div class="floating-badge badge-php">
+              <span class="badge-icon">PHP</span>
+              <span>Backend</span>
+            </div>
+            <div class="floating-badge badge-oop">
+              <span class="badge-icon">OOP</span>
+              <span>Architecture</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TECH TICKER / MARQUEE BANNER
+         ======================================================== -->
+    <div class="tech-banner">
+      <div class="ticker-track">
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> C++ Programming</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Python Logic</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> PHP Web Solutions</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Object-Oriented Programming (OOP)</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> HTML5 Semantic Design</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Modern CSS3 Responsive Layouts</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Vanilla JavaScript DOM</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Computer Engineering</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Aura College Student</span>
+        <!-- Duplicated items for smooth infinite loop -->
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> C++ Programming</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Python Logic</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> PHP Web Solutions</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Object-Oriented Programming (OOP)</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> HTML5 Semantic Design</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Modern CSS3 Responsive Layouts</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Vanilla JavaScript DOM</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Computer Engineering</span>
+        <span class="ticker-item"><span class="ticker-symbol">◈</span> Aura College Student</span>
+      </div>
+    </div>
+
+    <!-- ========================================================
+         STATISTICS SECTION
+         ======================================================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <!-- Stat 1 -->
+          <div class="stat-card reveal">
+            <div class="stat-number-wrapper">
+              <span class="stat-number">2nd</span>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-label">Year in College</span>
+              <p class="stat-description">Undergraduate Computer Engineering student</p>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card reveal" style="--delay: 0.1s;">
+            <div class="stat-number-wrapper">
+              <span class="stat-number">5+</span>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-label">Core Technologies</span>
+              <p class="stat-description">C++, Python, PHP, OOP & Web languages</p>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card reveal" style="--delay: 0.2s;">
+            <div class="stat-number-wrapper">
+              <span class="stat-number">3</span>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-label">Educational Levels</span>
+              <p class="stat-description">Continuous academic discipline & growth</p>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card reveal" style="--delay: 0.3s;">
+            <div class="stat-number-wrapper">
+              <span class="stat-number">100%</span>
+            </div>
+            <div class="stat-meta">
+              <span class="stat-label">Learning Mindset</span>
+              <p class="stat-description">Dedicated to steady progress & coding practice</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ABOUT SECTION
+         ======================================================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-glow"></span>
+            Profile Overview
+          </div>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">
+            An aspiring Computer Engineer blending analytical logic with modern software development skills.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Featured Visual Profile Card -->
+          <div class="about-visual reveal reveal-left">
+            <div class="student-card">
+              <div class="card-glow-bg"></div>
+              
+              <!-- Card Header Badge -->
+              <div class="card-status-pill">
+                <span class="status-dot"></span>
+                <span>Active Undergraduate</span>
+              </div>
+
+              <!-- Center Profile Icon / Monogram -->
+              <div class="student-avatar-frame">
+                <div class="student-monogram">MM</div>
+                <div class="avatar-ring-outer"></div>
+              </div>
+
+              <!-- Main Name & Course -->
+              <div class="student-card-details">
+                <h3 class="student-name">MAVI MELEGRITO</h3>
+                <p class="student-badge-title">Computer Engineering Student</p>
+                <div class="student-institution">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Aura College</span>
+                </div>
+              </div>
+
+              <!-- Engineering Specs Box -->
+              <div class="student-specs">
+                <div class="spec-row">
+                  <span class="spec-label">Program:</span>
+                  <span class="spec-value">BS Computer Engineering</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Standing:</span>
+                  <span class="spec-value">2nd Year Regular</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Interests:</span>
+                  <span class="spec-value">Software, OOP & Systems</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Status:</span>
+                  <span class="spec-value spec-active">Learning & Evolving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Narrative & Pillars -->
+          <div class="about-content reveal reveal-right">
+            <h3 class="about-headline">
+              Fostering Strong Engineering Fundamentals at Aura College
+            </h3>
+
+            <p class="about-paragraph">
+              I am a <strong>2nd year Computer Engineering student at Aura College</strong>. I am currently developing my programming and software development skills, focusing on writing clean code and understanding how software interacts with systems.
+            </p>
+
+            <p class="about-paragraph">
+              I have practical experience and knowledge in <strong>C++, Python, PHP</strong>, and <strong>Object-Oriented Programming (OOP)</strong>. My goal is to build reliable, well-structured programs while continuously expanding my understanding of computer architecture and modern web solutions.
+            </p>
+
+            <!-- Three Core Pillars -->
+            <div class="about-pillars">
+              
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4>Software Development</h4>
+                  <p>Exploring backend logic, structured algorithms, and modern web interfaces.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4>Engineering Logic</h4>
+                  <p>Applying rigorous analytical thinking and procedural discipline to projects.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4>Continuous Improvement</h4>
+                  <p>Consistently practicing new paradigms, code refactoring, and coursework challenges.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Quick Action -->
+            <div class="about-action">
+              <a href="#education" class="btn btn-secondary">
+                View Education Timeline
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SKILLS SECTION
+         ======================================================== -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-glow"></span>
+            Technical Competencies
+          </div>
+          <h2 class="section-title">Technologies I <span class="text-gradient">Work With</span></h2>
+          <p class="section-subtitle">
+            Languages, paradigms, and tools I use in my academic curriculum and self-paced programming journey.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill 1: C++ -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-badge cpp-badge">
+                <span class="icon-label">C++</span>
+              </div>
+              <div class="skill-level-tag">Academic Core</div>
+            </div>
+            <h3 class="skill-title">C++</h3>
+            <p class="skill-description">
+              Object-oriented programming and problem solving. Fundamental coursework in memory, control flow, and computational logic.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">75%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Python -->
+          <div class="skill-card reveal" style="--delay: 0.1s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge py-badge">
+                <span class="icon-label">PY</span>
+              </div>
+              <div class="skill-level-tag">Active Practice</div>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-description">
+              Programming, logic, automation, and general development. Writing scripts and algorithmic exercises with clean syntax.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">70%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: PHP -->
+          <div class="skill-card reveal" style="--delay: 0.2s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge php-badge">
+                <span class="icon-label">PHP</span>
+              </div>
+              <div class="skill-level-tag">Web Foundations</div>
+            </div>
+            <h3 class="skill-title">PHP</h3>
+            <p class="skill-description">
+              Server-side programming and web development. Handling requests, form validations, dynamic scripting, and backend routines.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">65%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: OOP -->
+          <div class="skill-card reveal" style="--delay: 0.3s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge oop-badge">
+                <span class="icon-label">OOP</span>
+              </div>
+              <div class="skill-level-tag">Architecture Paradigm</div>
+            </div>
+            <h3 class="skill-title">Object-Oriented Programming (OOP)</h3>
+            <p class="skill-description">
+              Understanding classes, objects, inheritance, encapsulation, and polymorphism to structure scalable, modular software.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">75%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: HTML -->
+          <div class="skill-card reveal" style="--delay: 0.4s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge html-badge">
+                <span class="icon-label">&lt;/&gt;</span>
+              </div>
+              <div class="skill-level-tag">Frontend Core</div>
+            </div>
+            <h3 class="skill-title">HTML5</h3>
+            <p class="skill-description">
+              Semantic structure, accessible markup, document hierarchy, and clean web standards for modern interfaces.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">80%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: CSS -->
+          <div class="skill-card reveal" style="--delay: 0.5s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge css-badge">
+                <span class="icon-label">#css</span>
+              </div>
+              <div class="skill-level-tag">Styling & UI</div>
+            </div>
+            <h3 class="skill-title">CSS3</h3>
+            <p class="skill-description">
+              Modern styling utilizing Flexbox, CSS Grid, variables, animations, glassmorphism, and responsive layouts.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">75%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 7: JavaScript -->
+          <div class="skill-card reveal" style="--delay: 0.6s;">
+            <div class="skill-header">
+              <div class="skill-icon-badge js-badge">
+                <span class="icon-label">JS</span>
+              </div>
+              <div class="skill-level-tag">Dynamic Logic</div>
+            </div>
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="skill-description">
+              Vanilla JavaScript programming, DOM manipulation, asynchronous flow, interactive menus, and client-side behavior.
+            </p>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Proficiency Level</span>
+                <span class="meter-percentage">70%</span>
+              </div>
+              <div class="meter-bar-bg">
+                <div class="meter-bar-fill" style="--level: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         EDUCATION SECTION
+         ======================================================== -->
+    <section class="education-section section-padding" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-glow"></span>
+            Academic Background
+          </div>
+          <h2 class="section-title">Education <span class="text-gradient">Timeline</span></h2>
+          <p class="section-subtitle">
+            A solid academic foundation spanning elementary, business high school, and undergraduate engineering studies.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Education Item 1: Current College -->
+          <div class="timeline-item reveal">
+            <div class="timeline-badge-pulse">
+              <div class="pulse-inner"></div>
+            </div>
+            <div class="timeline-card current-education">
+              <div class="timeline-header-meta">
+                <span class="timeline-year-tag current-tag">2026 - Present • Current</span>
+                <span class="timeline-status-badge">Undergraduate</span>
+              </div>
+              <h3 class="timeline-school">Aura College</h3>
+              <h4 class="timeline-degree">Bachelor of Science in Computer Engineering</h4>
+              <p class="timeline-role">2nd Year College Student</p>
+              <p class="timeline-desc">
+                Engaged in foundational computer engineering coursework, including procedural and object-oriented programming (C++, Python), computer architecture, hardware-software interfacing, and analytical problem-solving.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag">Computer Engineering</span>
+                <span class="edu-tag">C++ & Python</span>
+                <span class="edu-tag">System Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item 2: High School -->
+          <div class="timeline-item reveal" style="--delay: 0.15s;">
+            <div class="timeline-badge-pulse">
+              <div class="pulse-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header-meta">
+                <span class="timeline-year-tag">Previous</span>
+                <span class="timeline-status-badge">Graduated</span>
+              </div>
+              <h3 class="timeline-school">Mondriaan Aura Business High School</h3>
+              <h4 class="timeline-degree">High School Graduate</h4>
+              <p class="timeline-role">Secondary Education</p>
+              <p class="timeline-desc">
+                Developed critical thinking, academic discipline, and early technical interests that propelled the journey into computer engineering.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag">High School Diploma</span>
+                <span class="edu-tag">Business & Academics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item 3: Elementary -->
+          <div class="timeline-item reveal" style="--delay: 0.3s;">
+            <div class="timeline-badge-pulse">
+              <div class="pulse-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header-meta">
+                <span class="timeline-year-tag">Previous</span>
+                <span class="timeline-status-badge">Graduated</span>
+              </div>
+              <h3 class="timeline-school">Mondriaan Montessori</h3>
+              <h4 class="timeline-degree">Elementary Graduate</h4>
+              <p class="timeline-role">Primary Education</p>
+              <p class="timeline-desc">
+                Built foundational curiosity, strong study habits, and independent learning methods in a Montessori educational environment.
+              </p>
+              <div class="timeline-tags">
+                <span class="edu-tag">Primary Education</span>
+                <span class="edu-tag">Montessori Methods</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         PROJECTS SECTION
+         ======================================================== -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-glow"></span>
+            Practical Experience
+          </div>
+          <h2 class="section-title">Projects & <span class="text-gradient">Learning</span></h2>
+          <p class="section-subtitle">
+            Academic assignments, programming exercises, and self-directed experiments created while pursuing Computer Engineering.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project Card 1: Student Programming Projects -->
+          <article class="project-card reveal">
+            <div class="project-card-banner">
+              <div class="project-banner-pattern"></div>
+              <div class="project-code-preview">
+                <span class="preview-tag">C++ / OOP</span>
+                <code>class EngineeringLab { ... };</code>
+              </div>
+              <div class="project-num">01</div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              
+              <h3 class="project-title">Student Programming Projects</h3>
+              <p class="project-desc">
+                Programming exercises and academic projects created while studying Computer Engineering. Focuses on data structures, console management, and OOP design principles.
+              </p>
+              
+              <div class="project-footer">
+                <a href="#projects" class="btn btn-secondary btn-sm project-link-btn" data-project="Student Programming Projects">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <span class="project-note">Academic Lab</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Python Projects -->
+          <article class="project-card reveal" style="--delay: 0.15s;">
+            <div class="project-card-banner">
+              <div class="project-banner-pattern"></div>
+              <div class="project-code-preview">
+                <span class="preview-tag">Python 3</span>
+                <code>def solve_problem(input_data):</code>
+              </div>
+              <div class="project-num">02</div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Logic</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+              
+              <h3 class="project-title">Python Projects</h3>
+              <p class="project-desc">
+                Small Python programs created to practice programming logic and problem solving. Includes math utilities, string processors, and fundamental algorithmic logic.
+              </p>
+              
+              <div class="project-footer">
+                <a href="#projects" class="btn btn-secondary btn-sm project-link-btn" data-project="Python Projects">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <span class="project-note">Scripting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Web Development Projects -->
+          <article class="project-card reveal" style="--delay: 0.3s;">
+            <div class="project-card-banner">
+              <div class="project-banner-pattern"></div>
+              <div class="project-code-preview">
+                <span class="preview-tag">Full-Stack Web</span>
+                <code>&lt;header&gt; + &lt;?php ?&gt;</code>
+              </div>
+              <div class="project-num">03</div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+              
+              <h3 class="project-title">Web Development Projects</h3>
+              <p class="project-desc">
+                Web projects created while learning HTML, CSS, JavaScript, and PHP. Explores responsive user interfaces, dynamic DOM behaviors, and basic server-side routing.
+              </p>
+              
+              <div class="project-footer">
+                <a href="#projects" class="btn btn-secondary btn-sm project-link-btn" data-project="Web Development Projects">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <span class="project-note">Interactive Web</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CONTACT SECTION
+         ======================================================== -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <span class="tag-glow"></span>
+            Reach Out
+          </div>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">
+            Have a question, project idea, or just want to connect? Feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Details Cards -->
+          <div class="contact-info-cards reveal reveal-left">
+            
+            <!-- Email Card -->
+            <div class="contact-card primary-contact-card">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Official Student Email</span>
+                <a href="mailto:maviray_melegrito@aura.edu.ph" class="contact-email-link" id="emailDisplay">
+                  maviray_melegrito@aura.edu.ph
+                </a>
+                <div class="contact-actions-row">
+                  <a href="mailto:maviray_melegrito@aura.edu.ph" class="btn btn-primary btn-sm">
+                    Send Me an Email
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </a>
+                  <button class="btn btn-secondary btn-sm" id="copyEmailBtn" title="Copy email address">
+                    <span id="copyBtnText">Copy Email</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- College & Academic Affiliation Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Academic Institution</span>
+                <h4 class="contact-card-heading">Aura College</h4>
+                <p class="contact-card-sub">Department of Computer Engineering • 2nd Year</p>
+              </div>
+            </div>
+
+            <!-- Availability Card -->
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Current Status</span>
+                <h4 class="contact-card-heading">Open for Academic Collaboration</h4>
+                <p class="contact-card-sub">Student study groups, code reviews & programming discussions</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Message Box Form (Handles email preparation smoothly) -->
+          <div class="contact-form-card reveal reveal-right">
+            <h3 class="form-title">Send a Quick Note</h3>
+            <p class="form-subtitle">Fill in the fields below to quickly draft an email directly to my inbox.</p>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Santos" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Student Collaboration / Question" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message</label>
+                <textarea id="senderMessage" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Compose Email to Mavi
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-text">Mavi<span class="dot">.</span></span>
+          <span class="logo-tag">CpE</span>
+        </a>
+        <p class="footer-role">Computer Engineering Student</p>
+        <p class="footer-school">Aura College • BS Computer Engineering</p>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-heading">Navigation</span>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <span class="footer-heading">Direct Email</span>
+        <a href="mailto:maviray_melegrito@aura.edu.ph" class="footer-email">maviray_melegrito@aura.edu.ph</a>
+        <p class="footer-notice">Open to technical learning & academic growth.</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Mavi Melegrito. All rights reserved.
+        </p>
+        <a href="#home" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Info Modal for User Feedback -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <div class="modal-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modalProjectTitle">Project Overview</h3>
+      <p class="modal-description" id="modalProjectDesc">
+        Academic project placeholder. As Mavi completes further coursework and coding exercises at Aura College, real repository links and demonstrations will be linked here!
+      </p>
+      <div class="modal-action">
+        <button class="btn btn-primary" id="modalOkBtn">Got it</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Copy Action -->
+  <div class="toast" id="toastMessage">Email copied to clipboard!</div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
